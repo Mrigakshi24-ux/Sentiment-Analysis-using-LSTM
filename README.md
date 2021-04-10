@@ -1,5 +1,5 @@
 # Sentiment-Analysis-using-LSTM
-Building a Sentiment Analysis using keras framework.
+Building a Sentiment Analysis using Keras framework.
 
 Wouldn't it be great if machines could sense our mood, 'sentiments' to be more precise?
 Well, Machine Learning has a solution to most of our problems today. With various algorithms availible to us, it becomes a little more easy to build models.
