@@ -4,7 +4,7 @@ Building a Sentiment Analysis using Keras framework.
 Wouldn't it be great if machines could sense our mood, 'sentiments' to be more precise?
 Well, Machine Learning has a solution to most of our problems today. With various algorithms availible to us, it becomes a little more easy to build models.
 
-This sentiment analysis model is build using the LSTM (Long Short Term Memory) network which is itself a modification of RNN. RNN had the major issue of vanishing gradient, so LSTM came into picture. The dataset for this model is taken from kaggle. The link for the same is provided here : [Dataset](https://www.kaggle.com/ashukr/sentiment-analysis-using-lstm/data)
+This sentiment analysis model is build using the LSTM (Long Short Term Memory) network which is itself a modification of RNN. RNN had the major issue of vanishing gradient, so LSTM came into picture. The dataset for this model is taken from kaggle. The link for the same is provided here : [Dataset](https://www.kaggle.com/ashukr/rnnsentiment-data)
 
 The major steps involve:
 1. Data preprocessing: To make the data fit for feeding it to the model, it must be cleaned. All the punctuations, stopwords must be removed. It should be completely converted to lower case.
