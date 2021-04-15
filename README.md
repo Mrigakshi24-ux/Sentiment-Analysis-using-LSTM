@@ -7,12 +7,12 @@ Well, Machine Learning has a solution to most of our problems today. With variou
 This sentiment analysis model is build using the LSTM (Long Short Term Memory) network which is itself a modification of RNN. RNN had the major issue of vanishing gradient, so LSTM came into picture. The dataset for this model is taken from kaggle. The link for the same is provided here : [Dataset](https://www.kaggle.com/ashukr/sentiment-analysis-using-lstm/data)
 
 The major steps involve:
-1. Data preprocessing: TO make the data fit for feeding it to the model, it must be cleaned. All the punctuations, stopwords must be removed. It should be completely converted to lower case.
+1. Data preprocessing: To make the data fit for feeding it to the model, it must be cleaned. All the punctuations, stopwords must be removed. It should be completely converted to lower case.
 2. Creating a vocabulary: In order to tokenize this data, we need to define a dictionary which contains all the unique words with their frequency count. 
 3. Splitting the text into words and converting these words into vectors: The machine takes input only in numbers, so we first we need to tokenize/spit the lines into individual words and then convert these words into numbers using the dictionary above. The words will be assigned number equal to their index in dictionary.
 4. Encode the labels: As here we have only two labels, we encode them into 0 and 1. It can be done manually or by using LabelEncoder library.
 5. Removing the strings with length 0 and pad the strings with length greater than n: In order to keep out input and output consistent for the model, we choose n, here I have taken 300, so that all the strings can be of equal length -300. The strings with length less than 300 are padded, where as the ones with length more than 300 are slashed to 300.
-6. Splitting data and buliding model: Now or data is prepared for training the model, so we split it into training and testing set. In building our model, I have used the following layer:
+6. Splitting data and buliding model: Now our data is prepared for training the model, so we split it into training and testing set. In building our model, we have used the following layer:
       - Sequential : to define a sequence for all the layers
       - Embedding : This layer is used to find relationship between similar words and differetiate them from completely opposite words. For eg: Between green, red, and grass,                      green and red are similar as compared to grass. This layers keeps up with this task and assigns values to them accordingly.
       - Dropout : This layer is used to accomplish the task of regularization. It avoids overfitting by 'switching off' certains neurons in a layer.
